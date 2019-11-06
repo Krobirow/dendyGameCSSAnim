@@ -1,0 +1,291 @@
+body {
+    background: url('./img/background.png') center top no-repeat;
+    background-size: 1920px 1010px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.plate {
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    animation: move-plate 10s ease 3 forwards;
+}
+
+.plate:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%)
+    rotateX(45deg);
+}
+
+.plate:checked {
+    opacity: 0;
+    counter-increment: list;
+}
+.score:after {
+    content: counter(list);
+    font-size: 26px;
+    font-family: sans-serif;
+    color: blueviolet;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+span {
+    font-size: 20px;
+}
+
+p {
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+/* First plate animation */
+
+.plate-1 {
+    animation: move-plate-1 11s ease 3 forwards;
+}
+
+@keyframes move-plate-1 {
+    0% {
+        left: 79%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 10%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* First plate animation end*/
+
+/* Second plate animation */
+
+.plate-2 {
+    animation: move-plate-2 11s 5s ease 3 forwards;
+}
+
+@keyframes move-plate-2 {
+    0% {
+        left: 30%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 45%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Second plate animation end*/
+
+/* Third plate animation */
+
+.plate-3 {
+    animation: move-plate-3 12s 10s ease 3 forwards;
+}
+
+@keyframes move-plate-3 {
+    0% {
+        left: 80%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 60%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Third plate animation end*/
+
+/* Fourth plate animation */
+
+.plate-4 {
+    animation: move-plate-4 14s 15s ease 3 forwards;
+}
+
+@keyframes move-plate-4 {
+    0% {
+        left: 15%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 45%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Fourth plate animation end*/
+
+/* Fifth plate animation */
+
+.plate-5 {
+    animation: move-plate-5 13s 18s ease 3 forwards;
+}
+
+@keyframes move-plate-5 {
+    0% {
+        left: 35%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 55%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Fifth plate animation end*/
+
+
+/* Sixth plate animation */
+
+.plate-6 {
+    animation: move-plate-6 15s 22s ease 3 forwards;
+}
+
+@keyframes move-plate-6 {
+    0% {
+        left: 95%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 15%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Sixth plate animation end*/
+
+
+/* Seventh plate animation */
+
+.plate-7 {
+    animation: move-plate-7 16s 25s ease 3 forwards;
+}
+
+@keyframes move-plate-7 {
+    0% {
+        left: 115%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 35%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Seventh plate animation end*/
+
+
+/* Eighth plate animation */
+
+.plate-8 {
+    animation: move-plate-8 12s 28s ease 3 forwards;
+}
+
+@keyframes move-plate-8 {
+    0% {
+        left: 72%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 32%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Eighth plate animation end*/
+
+
+/* Ninth plate animation */
+
+.plate-9 {
+    animation: move-plate-9 13s 30s ease 3 forwards;
+}
+
+@keyframes move-plate-9 {
+    0% {
+        left: 65%;
+        bottom: 0%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg);
+    }
+    50% {
+        bottom: 60%;
+    }
+    100% {
+        left: 21%;
+        bottom: 50%;
+        transform: translate(-50%, -50%)
+    rotateX(45deg) scale(0);
+    }
+}
+
+/* Ninth plate animation end*/
